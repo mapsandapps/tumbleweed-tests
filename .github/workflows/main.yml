@@ -6,6 +6,9 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        machines: [1, 2]
     steps:
       - name: Checkout
         uses: actions/checkout@v1
