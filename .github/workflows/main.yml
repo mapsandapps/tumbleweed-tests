@@ -12,3 +12,8 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v1
+        with:
+          record: true
+          parallel: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
