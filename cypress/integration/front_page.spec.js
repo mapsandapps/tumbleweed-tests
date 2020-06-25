@@ -1,6 +1,6 @@
 context('Front page', () => {
   beforeEach(() => {
-    cy.visit('https://elated-kalam-a3179f.netlify.app/')
+    cy.visit('https://elated-kalam-a3179f.netlify.app/front-page.html')
   })
 
   it('loads and displays data', () => {
